@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rosarivo&display=swap");
+/* HEADERRR */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(95%, 75em);
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+nav {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 100px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+li,
+a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links li {
+  list-style: none;
+  padding-left: 50px;
+}
+
+.nav-links li a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    overflow: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 75px;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    font-size: 1.2rem;
+    opacity: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    padding-left: 50px;
+  }
+}
+
+.nav-active {
+  transform: translateY(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* bagian ke atas adalahh headerr ===================================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+
+.fonts {
+  color: white;
+  font-family: Raleway;
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #f40;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #f40;
+}
+
+input[type="time"] {
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+textarea#subject {
+  margin-top: 6px;
+  background-color: white;
+}
+
+/* Style the container/contact section */
+.container {
+  margin-top: 100px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  display: flex;
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* start of slider */
+.slides {
+  width: 400px;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+}
+
+#prevBtn img {
+  height: 40px;
+  margin-top: 100px;
+  margin-left: -405px;
+  opacity: 50%;
+}
+
+#nextBtn img {
+  height: 40px;
+  margin-top: 100px;
+  margin-left: -35px;
+  opacity: 50%;
+}
+
+#prevBtn :hover {
+  opacity: 100%;
+  transition: 0.5s;
+}
+#nextBtn :hover {
+  opacity: 100%;
+  transition: 0.5s;
+}
+/* end of slider */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* ini kebawah semua footerrrr yaaaaaaa================================================================================================================= */
+
+footer {
+  font-family: "Poppins", sans-serif;
+  bottom: 0px;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding-top: 50px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 50px;
+}
+
+.box h2 {
+  color: #edf0f1;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.box p {
+  color: #edf0f1;
+}
+
+.box .text {
+  color: #edf0f1;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.box .content:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+.box .content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: #f40;
+  top: -10px;
+}
+
+.left .content p {
+  text-align: justify;
+  line-height: 30px;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+  margin: 0 2px;
+}
+
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  color: #edf0f1;
+  background: #101113;
+  line-height: 40px;
+  text-align: center;
+  font-size: 10px;
+  border: 5px;
+  transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+  cursor: pointer;
+  background: #f40;
+}
+
+.center .content .place,
+.number {
+  margin-bottom: 10px;
+}
+
+.center .content .fa {
+  color: #edf0f1;
+  height: 40px;
+  width: 40px;
+  font-size: 10px;
+  background: #101113;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .content .fa:hover {
+  background: #f40;
+}
+
+.center .content .text {
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.right form textarea {
+  resize: none;
+}
+
+.right form input,
+textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+  color: #fefefa;
+}
+
+.right form input:focus,
+textarea:focus {
+  outline-color: #f40;
+}
+
+.right .content .text {
+  padding-bottom: 10px;
+}
+
+.right .content input {
+  margin-bottom: 10px;
+  height: 35px;
+}
+
+.right form .btn {
+  margin-top: 20px;
+}
+
+.right form .btn button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f40;
+  font-size: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right form .btn button:hover {
+  background: #f40;
+}
+
+.bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+
+.bottom center span {
+  color: #656565;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bottom center a {
+  color: #f40;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 10px;
+}
+
+.logos {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.logo-sosmed {
+  /* margin: 0px 160px; */
+  margin: 0px 10px;
+  width: 50px;
+  height: auto;
+}
+
+.logo-sosmed:hover {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 1150px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  #logo {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .nav-links li {
+    font-size: 0.8rem;
+  }
+
+  .big-text {
+    top: 75vh;
+  }
+
+  .mask-text {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .face-mask h2 {
+    text-align: center;
+    padding-bottom: 70vh;
+  }
+
+  .face-mask p {
+    text-align: center;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+
+  .mask-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+  }
+
+  .row-ig {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* footer */
+
+  .main-content {
+    flex-direction: column;
+  }
+}
